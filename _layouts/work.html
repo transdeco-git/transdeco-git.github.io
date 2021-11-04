@@ -19,7 +19,7 @@ Hinta: {{ teos[0].hinta }} &euro;<br>
 Korkeus: {{ teos[0].korkeus }}<br>
 Leveys: {{ teos[0].leveys }}<br>
 Tekniikka: {{ teos[0].tekniikka }}<br>
-Valmistumisvuosi {{ teos[0].valmistumisvuosi }}<br>
+Valmistumisvuosi: {{ teos[0].valmistumisvuosi }}<br>
 Vedosmäärä: {{ teos[0].vedosmaara }}
 </div>
 {% endcomment %}
@@ -35,15 +35,18 @@ Vedosmäärä: {{ teos[0].vedosmaara }}
 {% endfor %}
 
 <div style="text-align:left">
-Taiteilija: {{ taiteilija }}<br>
-Tuotenumero: {{ teos[0].tuotenumero }}<br>
+
+<p>Taiteilija: {{ taiteilija }}<br>
 Teosnimi: {{ teos[0].teosnimi }}<br>
-Tunniste: {{ teos[0].tunniste }}<br>
-Hinta: {{ teos[0].hinta }}<br>
-Korkeus: {{ teos[0].korkeus }}<br>
-Leveys: {{ teos[0].leveys }}<br>
+Valmistumisvuosi: {{ teos[0].valmistumisvuosi }}<br>
 Tekniikka: {{ teos[0].tekniikka }}<br>
-Valmistumisvuosi {{ teos[0].valmistumisvuosi }}<br>
-Vedosmäärä: {{ teos[0].vedosmaara }}
+Vedosmäärä: {{ teos[0].vedosmaara }}<br>
+Kuva-ala (korkeys, leveys): {{ teos[0].korkeus }} x {{ teos[0].leveys }} cm<br>
+Tunniste: {{ teos[0].tunniste }}<br>
+Hinta: {{ teos[0].hinta }} €<br></p>
+<p>Vie hiiri kuvan päälle katsoaksesi yksityiskohtia. <i class="fa-solid fa-up-down-left-right"></i><br>
+<a href="https://res.cloudinary.com/transdeco/image/upload/v1634760415/pub/{{ teos[0].tait_tunniste }}_{{ teos[0].tunniste }}_1024.jpg" target="_blank">Katso kuva suurikokoisena <i class="fas fa-external-link-alt"></i></a></p>
+<p><br></p>
+
 </div>
 
